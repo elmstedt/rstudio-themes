@@ -81,9 +81,29 @@
 font-weight: 600;
 }
 
+
 .ace_constant {
   color: #339999;
+}
 
+@keyframes hazard {
+  0% {
+    background-color: #FFFFFF;
+  }
+  50% {
+    /* opacity: 0; */
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+  100% {
+    background-color: #FFFFFF;
+  }
+}
+
+.GCHYANPCG0B {
+  color: #FF4400ff;
+  font-weight: 900;
+  animation: hazard 1s ease-in-out 10;
 }
 
 .ace_constant.ace_numeric {
@@ -154,7 +174,6 @@ font-weight: 600;
 .ace_bracket {
   margin: 0 !important;
   border: 0 !important;
-  /*background-color: rgba(128, 128, 128, 0.5);*/
   background-color: rgba(255, 255, 255, 1);
   animation: blinker 1s ease infinite;
 }
